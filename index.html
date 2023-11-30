@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User menu</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="navbar" id="myNavbar">
+    <a href="#" class="active">Home</a>
+    <a href="#">Struktur</a>
+    <a href="#">login siswa</a>
+    <a href="#">Galery</a>
+    <a href="#">Quiz</a>
+    <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+      ☰ Menu<i class="fa fa-bars"></i>
+    </a>
+  </div>
+  <script src="main.js"></script>
+
+<div class="co">
+    <img src="icons8-male-user-48.png" alt="Centered Image" class="centered-img">
+    <p>Akun bersifat tamu</p>
+</div>
+<div class="co">
+    <img src="icons8-lock-orientation-50.png" alt="Centered Image" class="centered-img">
+    <p>tidak dapat membuka fitur di admin akun</p>
+</div>
+<div class="cow">
+    <img src="icons8-whatsapp-50.png" alt="Centered Image" class="centered-img">
+    <p>hubungi saya jika ada kendala pada website ini</p>
+    <p>+6281 333 794 278</p>
+</div>
+
+<main>
+  <!-- Your content goes here -->
+</main>
+
+<script>
+  document.getElementById('mobile-menu').addEventListener('click', function() {
+    var navList = document.querySelector('.nav-list');
+    navList.classList.toggle('active');
+  });
+</script>
+
+</body>
+</html>
